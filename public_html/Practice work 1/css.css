@@ -1,0 +1,109 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 28 сент. 2020 г., 15:13:14
+    Author     : HP
+*/
+
+body {
+	text-align: center;
+
+	font-family: "Century Gothic", sans-serif;
+}
+.box {
+	width: 500px;
+	height: 800px;
+	text-align: center;
+	margin: 0 auto;
+}
+.name {
+	line-height: 1;
+	font-size: 65px;
+	margin-bottom: -40px;
+}
+.last {
+	line-height: 1;
+	font-size: 45px;
+}
+.address {
+	font-size: 10px;
+	color: #aaa;
+}
+.job {
+	position: relative;
+	top: 10px;
+	font-size: 16px;
+	font-weight: bold;
+	color: rgb(81, 141, 212);
+}
+.job:before,
+.job:after {
+	content: '';
+	width: 100px;
+	height: 1px;
+	background-color: rgb(81, 141, 212);
+	position: absolute;
+	top: 10px;
+	left: 0px;
+}
+.job:after {
+	left: 400px;
+}
+.pack {
+	display: flex;
+	height: 100px;
+	margin-top: 50px;
+}
+.article {
+	text-align: left;
+	width: 75%;
+}
+.aside {
+	background-color: rgba(81, 141, 170, .5);
+	text-align: left;
+	width: 25%;
+	height: 100%;
+}
+.heading {
+	font-size: 18px;
+	font-weight: 700;
+}
+.art {
+	display: flex;
+	margin-top: 15px;
+}
+.left {
+	color: rgb(81, 141, 212);
+	font-size: 9px;
+}
+.right {
+	margin-left: 15px;
+}
+.head {
+	font-size: 11px;
+	font-weight: 700;
+}
+.sub {
+	font-size: 11px;
+	color: #aaa;
+}
+.text {
+	font-size: 9px;
+}
+.heading2 {
+	margin-top: 20px;
+}
+.aside {
+	padding: 3px;
+	height: 560px;
+}
+.aside+ .sub{
+	font-weight: 700;
+	color: #000;
+}
+.sub2 {
+	margin-top: 10px;
+}
