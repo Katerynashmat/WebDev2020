@@ -1,0 +1,236 @@
+/* Header */
+
+header {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+header a {
+    color: black;
+}
+
+h1 {
+    font-family: 'Penguin Attack', arial;
+    font-size: 7vw;
+    line-height: 87px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    padding-bottom: 1.7%;
+    padding-top: 2%;
+}
+
+nav {
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #C7A43B;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.topmenu>li {
+    display: inline-block;
+    position: relative;
+    font-size: 2vw;
+    padding-left: 6.8%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #592930;
+    display: inline-block;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+
+.topmenu {
+    backface-visibility: hidden;
+}
+
+.down:after {
+    content: "\f107";
+    margin-left: 8%;
+    font-family: FontAwesome;
+}
+
+.submenu {
+    background: white;
+    border: 2px solid #592930;
+    position: absolute;
+    left: 20%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 123%;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+    margin-top: 5%;
+}
+
+.topmenu>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: #592930;
+    padding: 0 15.5%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 7%;
+}
+
+.Sup {
+    padding-top: 5%;
+}
+
+
+
+
+
+/* Текст */
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 7%;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 80%;
+    }
+    to {
+        margin-left: 0%;
+        width: 80%;
+    }
+}
+
+img {
+    margin-top: 4%;
+    padding-left: 4%;
+}
+
+
+
+
+
+.porady {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Bloka2{  
+    padding-bottom: 2%;
+    margin-left: 17%;
+}
+
+.Miacik{
+    flex-direction: row;
+    display: flex;
+    margin-top: 3%;
+    margin-left: 35%;
+}
+
+.ball {
+    margin: 2%;
+    position: relative;
+    margin-bottom: 24px;
+    background-color: #FACF4F;
+    height: 20px;
+    border-radius: 20px;
+    width: 20px;
+    margin-bottom: 24px;
+    margin: 4px;
+    
+}
+
+@media(max-width:840px ){
+    .Miacik{
+        margin-left: 32%;  
+    }
+}
+@media(max-width:480px ){
+    .Miacik{
+        margin-left: 27%;  
+    }
+}
+@media(max-width:320px ){
+    .Miacik{
+        margin-left: 20%;  
+    }
+}
+
+
+
+/* Футер */
+
+footer {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 7%;
+}
+
+.footer {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 5%;
+}
+
+footer p::before {
+    content: "\f1f9";
+    margin-right: 0.5%;
+    font-family: FontAwesome;
+}
+
+footer img {
+    padding-top: 40%;
+    padding-bottom: 40%;
+    width: 60%;
+}
+
+.viber {
+    margin-left: 40%;
+}
+
+.telegram {
+    margin-left: 22%;
+}
+
+.facebook {
+    margin-right: -7%;
+    padding-top: 76%;
+}
+
+.insta {
+    margin-right: -10%;
+}
+
+div p {
+    width: 80%;
+}

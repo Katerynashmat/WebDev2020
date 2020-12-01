@@ -1,0 +1,373 @@
+/* Header */
+
+header {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+h1 {
+    font-family: 'Penguin Attack', arial;
+    font-size: 7vw;
+    line-height: 87px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    padding-bottom: 1.7%;
+    padding-top: 2%;
+}
+
+nav {
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #C7A43B;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.topmenu>li {
+    display: inline-block;
+    position: relative;
+    font-size: 2vw;
+    padding-left: 6.8%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #592930;
+    display: inline-block;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+
+.topmenu {
+    backface-visibility: hidden;
+}
+
+.down:after {
+    content: "\f107";
+    margin-left: 8%;
+    font-family: FontAwesome;
+}
+
+.submenu {
+    background: white;
+    border: 2px solid #592930;
+    position: absolute;
+    left: 20%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 123%;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+    margin-top: 5%;
+}
+
+.topmenu>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: #592930;
+    padding: 0 15.5%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 7%;
+}
+
+.Sup {
+    padding-top: 5%;
+}
+
+
+/* Главный экран */
+
+.Recepty {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.ReceptyMain {
+    background: url(EDINOROG.jpg) 100% no-repeat;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    margin-left: 2.5%;
+    margin-right: 3.5%;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    text-align: center;
+    margin-left: -20%;
+    padding-bottom: 5%;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 80%;
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+.PodKartinkou {
+    border: solid #592930;
+    padding-top: 5%;
+    padding-bottom: 7%;
+    padding-left: 6%;
+    margin-top: -6%;
+    margin-left: 7%;
+    color: #592930;
+    width: 40%;
+    text-align: center;
+    background: white;
+    position: relative;
+}
+
+.Stravy {
+    line-height: 130%;
+    width: 80%;
+}
+
+.PodKartinkou p {
+    width: 80%;
+}
+
+.Knopka {
+    background: #C7A43B;
+    border: none;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    padding-left: 6%;
+    padding-right: 6%;
+    margin-top: 10%;
+}
+
+.Najp1 {
+    display: flex;
+}
+
+.Stravy {
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 50%;
+        width: 80%;
+    }
+    to {
+        margin-left: 0%;
+        width: 80%;
+    }
+}
+
+
+/* Найпопулярніші рецепти  */
+
+a {
+    color: black;
+}
+
+h3 {
+    font-size: 48px;
+    font-weight: 600;
+    margin-top: 8%;
+    padding-bottom: 2.6%;
+    margin-left: -10%;
+    margin-right: auto;
+    text-align: center;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 2%;
+    padding-bottom: 3%;
+}
+
+.Najpopularnisi {
+    margin-right: -2.5%;
+    margin-left: 5.5%;
+}
+
+.Najp1 {
+    display: flex;
+    margin-left: 1.5%;
+}
+
+.Najp1Foto {
+    margin-left: -4.5%;
+}
+
+.Novi {
+    margin-top: 5%;
+}
+
+.Knopka:hover {
+    animation: bounce 1s;
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    60%,
+    100% {
+        transform: translateY(0);
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+        transform: translateY(-20px);
+    }
+    80% {
+        transform: translateY(-10px);
+        transform: translateY(-10px);
+    }
+}
+
+
+/* Футер */
+
+footer {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 7%;
+}
+
+.footer {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 5%;
+}
+
+footer p::before {
+    content: "\f1f9";
+    margin-right: 0.5%;
+    font-family: FontAwesome;
+}
+
+footer img {
+    padding-top: 40%;
+    padding-bottom: 40%;
+    width: 60%;
+}
+
+.viber {
+    margin-left: 40%;
+}
+
+.telegram {
+    margin-left: 22%;
+}
+
+.facebook {
+    margin-right: -7%;
+    padding-top: 76%;
+}
+
+.insta {
+    margin-right: -10%;
+}
+
+footer div p {
+    width: 80%;
+}
+
+@media(max-width:940px) {
+    h4 {
+        width: 86%;
+    }
+}
+
+@media(max-width:840px) {
+    h3 {
+        width: 70%;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:720px) {
+    .PodKartinkou {
+        width: 80%;
+    }
+    .Stravy {
+        margin-left: 8%;
+        width: 92%;
+    }
+    h2 {
+        margin-left: -9%;
+        padding-bottom: 2%;
+    }
+    .Knopka {
+        margin-left: 14.5%;
+        margin-top: 8%;
+    }
+    h2 {
+        font-size: 50px;
+    }
+}
+
+@media(max-width:600px) {
+    .Najp1 {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1%;
+    }
+    .Stravy {
+        margin-left: 7%;
+    }
+    .Pasta {
+        width: 95%;
+    }
+    h3 {
+        font-size: 26px;
+        margin-left: 10%;
+    }
+    h4 {
+        padding-bottom: 5%;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    footer p {
+        font-size: 8px;
+        font-weight: 100px;
+    }
+}
+
+
+}
+@media(min-width:1301px) {
+    .ReceptyMain {
+        background: url(EDINOROG.jpg) 100% no-repeat #E4CDD5;
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        background-size: 100%
+    }
+}

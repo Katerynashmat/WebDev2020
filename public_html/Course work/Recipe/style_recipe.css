@@ -1,0 +1,324 @@
+/* Header */
+
+header {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+
+h1 {
+    font-family: 'Penguin Attack', arial;
+    font-size: 7vw;
+    line-height: 87px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 52%;
+    padding-bottom: 1.7%;
+    padding-top: 2%;
+}
+
+nav {
+    box-sizing: border-box;
+}
+
+nav ul {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background: #C7A43B;
+    padding-bottom: 1%;
+    padding-top: 1%;
+}
+
+.topmenu>li {
+    display: inline-block;
+    position: relative;
+    font-size: 2vw;
+    padding-left: 6.8%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav a {
+    color: #592930;
+    display: inline-block;
+    outline: none;
+    transition: .4s ease-in-out;
+}
+
+.topmenu {
+    backface-visibility: hidden;
+}
+
+.down:after {
+    content: "\f107";
+    margin-left: 8%;
+    font-family: FontAwesome;
+}
+
+.submenu {
+    background: white;
+    border: 2px solid #592930;
+    position: absolute;
+    left: 20%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 5;
+    width: 123%;
+    transform: perspective(600px) rotateX(-90deg);
+    transform-origin: 0% 0%;
+    transition: .6s ease-in-out;
+    margin-top: 5%;
+}
+
+.topmenu>li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: perspective(600px) rotateX(0deg);
+}
+
+.submenu li a {
+    color: #592930;
+    padding: 0 15.5%;
+    font-family: 'Open Sans', sans-serif;
+    padding-bottom: 7%;
+}
+
+.Sup {
+    padding-top: 5%;
+}
+
+
+/* Рецепты */
+
+a {
+    color: black;
+}
+
+.Recepty {
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 8%;
+}
+
+h3 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 2%;
+}
+
+h4 {
+    font-size: 22px;
+    margin-bottom: 1.2%;
+    margin-top: 6%;
+}
+
+div li {
+    font-size: 16px;
+    list-style-type: decimal;
+    width: 80%;
+    margin-left: 3%;
+    padding-bottom: 1%;
+}
+
+div ol {
+    padding-top: 0.8%;
+}
+
+div p {
+    width: 80%;
+}
+
+.KurkaIRamen {
+    display: flex;
+    margin-left: 9%;
+    width: 88.5%;
+    margin-top: 3%;
+}
+
+.Kvadrat {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 40%;
+    margin-top: -36%;
+    margin-left: 22%;
+}
+
+.Bez {
+    margin-top: 4%;
+}
+
+
+/* Футер */
+
+footer {
+    background: #FACF4F;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    margin-top: 7%;
+}
+
+.footer {
+    display: flex;
+}
+
+footer p {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    height: 5%;
+}
+
+footer p::before {
+    content: "\f1f9";
+    margin-right: 0.5%;
+    font-family: FontAwesome;
+}
+
+footer img {
+    padding-top: 40%;
+    padding-bottom: 40%;
+    width: 60%;
+}
+
+.viber {
+    margin-left: 40%;
+}
+
+.telegram {
+    margin-left: 22%;
+}
+
+.facebook {
+    margin-right: -7%;
+    padding-top: 76%;
+}
+
+.insta {
+    margin-right: -10%;
+}
+
+footer div p {
+    width: 80%;
+}
+
+@media(min-width: 1427px) {
+    .Kvadrat {
+        margin-top: -33.5%;
+    }
+}
+
+@media(max-width: 1250px) {
+    .Kvadrat {
+        margin-top: -36.5%;
+    }
+    .Bez {
+        margin-top: 4.5%;
+    }
+}
+
+@media(max-width: 1094px) {
+    .Kvadrat {
+        margin-top: -41%;
+    }
+}
+
+@media(max-width: 1000px) {
+    .Bez {
+        margin-top: 5.2%;
+    }
+}
+
+@media(max-width: 980px) {
+    h3 {
+        width: 86%;
+    }
+    .Bez {
+        margin-top: 3.8%;
+    }
+    h3 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 880px) {
+    .Bez {
+        margin-top: 10.5%;
+    }
+}
+
+@media(max-width: 840px) {
+    .Kvadrat {
+        margin-top: -47%;
+    }
+    .Bez {
+        margin-top: 4.5%;
+    }
+}
+
+@media(max-width: 800px) {
+    .Bez {
+        visibility: hidden;
+    }
+}
+
+@media(max-width: 600px) {
+    .Bez {
+        visibility: visible;
+    }
+    .KurkaIRamen {
+        display: block;
+        width: 100%;
+    }
+    h3 {
+        width: 70%;
+    }
+    .Kvadrat {
+        margin-top: -34.5%;
+    }
+    .Supy {
+        margin-top: 30%;
+    }
+    footer {
+        margin-top: 30%;
+    }
+    footer p {
+        font-size: 8px;
+        font-weight: 100px;
+    }
+}
+
+@media(max-width: 514px) {
+    .Kvadrat {
+        margin-top: -37.5%;
+    }
+}
+
+@media(max-width: 515px) {
+    .Kvadrat {
+        margin-top: -37.5%;
+    }
+}
+
+@media(max-width: 484px) {
+    .Kvadrat {
+        margin-top: -42%;
+    }
+}
+
+@media(max-width: 357px) {
+    .Kvadrat {
+        margin-top: -47.5%;
+    }
+}
